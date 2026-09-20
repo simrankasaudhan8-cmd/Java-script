@@ -1,0 +1,27 @@
+const UserID = 242647
+let  accountEmail = "Simrangupta@1234"
+var salary = 168892
+
+accountEmail = "Simmygupta@1234"
+salary = 198762
+
+console.log(UserID);
+console.log(accountEmail)
+console.log(salary)
+
+/* instead of writing console.log all the time 
+we can make a table using console.table */
+
+console.table([UserID,accountEmail,salary])
+
+/* suppose we want to add one more index 
+inside the table but without values 
+we get values as undefined */
+
+let userState
+console.table([UserID,accountEmail,salary,userState])
+
+/*
+prefer not using var 
+because of issue in block scope and functional scope
+*/
